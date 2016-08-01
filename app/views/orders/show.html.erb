@@ -1,0 +1,32 @@
+<p>
+  <strong>Menu:</strong>
+  <%= @order.menu %>
+</p>
+ 
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%= @order.phone %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @order.address %>
+</p>
+<p>
+  <strong>Order code:</strong>
+  <%= rand(100..999) %>
+</p>
+<p>
+  <strong>Order status:</strong>
+  <%= @order.order_status %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
