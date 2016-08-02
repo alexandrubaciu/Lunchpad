@@ -1,0 +1,28 @@
+<h1>Menus</h1>
+<%= link_to 'New menu', new_menu_path %>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Title</th>
+    <th>First dish</th>
+    <th>First second</th>
+    <th>Dessert</th>
+    <th colspan="5"></th>
+  </tr>
+ 
+  <% @menus.each do |menu| %>
+    <tr>
+      <td><%= menu.date %></td>
+      <td><%= menu.title %></td>
+       <td><%= menu.first_dish %></td>
+        <td><%= menu.second_dish %></td>
+         <td><%= menu.dessert %></td>
+      <td><%= link_to 'Show', menu_path(menu) %></td>
+      <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
+      <td><%= link_to 'Delete', menu_path(menu),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    
+    </tr>
+  <% end %>
+</table>

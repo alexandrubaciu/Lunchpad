@@ -1749,3 +1749,493 @@ Processing by OrdersController#show as HTML
   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered orders/show.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 12:17:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 458ms (Views: 436.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 12:17:15 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 12:17:15 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 12:17:15 +0300
+
+
+Started GET "/orders" for 127.0.0.1 at 2016-08-02 12:17:17 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (1.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 2.1ms)
+  [1m[36m (78.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (98.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160801071513)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160801071513"]]
+  [1m[35m (120.9ms)[0m  commit transaction
+Migrating to CreateOrders (20160801123440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "menu" varchar, "name" varchar, "email" varchar, "phone" varchar, "address" varchar, "order_code" varchar, "order_status" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160801123440"]]
+  [1m[35m (109.2ms)[0m  commit transaction
+Migrating to CreateMenus (20160802093232)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "menus" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "title" varchar, "first_dish" varchar, "second_dish" varchar, "dessert" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160802093232"]]
+  [1m[35m (100.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 13:01:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 339ms (Views: 323.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 13:01:53 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:01:56 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/new" for 127.0.0.1 at 2016-08-02 13:01:58 +0300
+Processing by MenusController#new as HTML
+  Rendered menus/new.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 138ms (Views: 129.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:02:00 +0300
+Processing by MenusController#index as HTML
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus/new" for 127.0.0.1 at 2016-08-02 13:02:01 +0300
+Processing by MenusController#new as HTML
+  Rendered menus/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/menus" for 127.0.0.1 at 2016-08-02 13:02:18 +0300
+Processing by MenusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qQCGt69cE8wHC8bdjGVD36kzAIKAERJ/+T3IsJYNtBRMJOCGh9PEuR/jEV89TU7xUW4swPzeftJQWBbd+TSCYw==", "menu"=>{"title"=>"Meniu Lipsa de griji", "date"=>"22/12/2003", "first_dish"=>"Supa de pui", "second_dish"=>"Gratar de pui", "dessert"=>"Clatite cu ciocolata"}, "commit"=>"Save Menu"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "menus" ("date", "title", "first_dish", "second_dish", "dessert", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["date", "2003-12-22"], ["title", "Meniu Lipsa de griji"], ["first_dish", "Supa de pui"], ["second_dish", "Gratar de pui"], ["dessert", "Clatite cu ciocolata"], ["created_at", "2016-08-02 10:02:18.520887"], ["updated_at", "2016-08-02 10:02:18.520887"]]
+  [1m[35m (114.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/menus/1
+Completed 302 Found in 125ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:02:18 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:02:24 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:02:26 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/menus/1" for 127.0.0.1 at 2016-08-02 13:02:35 +0300
+Processing by MenusController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nz8SGIWaiT7RDx6c+KHLN3kwb5LbRqGmMziTd3DxVE56G3QprRVeS8nnyR5JicYZgW1D0KeJzQuaXU0aH8hiOQ==", "menu"=>{"date"=>"2016-12-22", "title"=>"Meniu Lipsa de griji", "first_dish"=>"Supa de pui", "second_dish"=>"Gratar de pui", "dessert"=>"Clatite cu ciocolata"}, "commit"=>"Save Menu", "id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "menus" SET "date" = ?, "updated_at" = ? WHERE "menus"."id" = ?  [["date", "2016-12-22"], ["updated_at", "2016-08-02 10:02:35.080763"], ["id", 1]]
+  [1m[36m (139.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/menus/1
+Completed 302 Found in 147ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:02:35 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:02:36 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:02:37 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:02:41 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:02:42 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+Processing by MenusController#index as HTML
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/menus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:25 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-08-02 13:03:26 +0300
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:03:28 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:03:29 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:03:31 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 13:03:39 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 13:04:15 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/menus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-08-02 13:04:16 +0300
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:04:21 +0300
+Processing by MenusController#index as HTML
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2016-08-02 13:04:24 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2016-08-02 13:32:59 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2016-08-02 13:33:00 +0300
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (9.9ms)
+  Rendered orders/new.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 52ms (Views: 46.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/o" for 127.0.0.1 at 2016-08-02 13:44:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/o"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-02 13:44:13 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 185ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:44:15 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 34ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:44:17 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:44:20 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/_form.html.erb (16.0ms)
+  Rendered menus/edit.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:44:30 +0300
+Processing by MenusController#index as HTML
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/menus/new" for 127.0.0.1 at 2016-08-02 13:44:32 +0300
+Processing by MenusController#new as HTML
+  Rendered menus/_form.html.erb (4.2ms)
+  Rendered menus/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:44:56 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+Processing by MenusController#index as HTML
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/menus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-08-02 13:45:10 +0300
+
+
+Started GET "/menus/new" for 127.0.0.1 at 2016-08-02 13:45:11 +0300
+Processing by MenusController#new as HTML
+  Rendered menus/_form.html.erb (12.1ms)
+  Rendered menus/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:45:14 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:45:15 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/_form.html.erb (6.0ms)
+  Rendered menus/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2016-08-02 13:45:18 +0300
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus/1" for 127.0.0.1 at 2016-08-02 13:45:19 +0300
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered menus/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/menus/1/edit" for 127.0.0.1 at 2016-08-02 13:45:21 +0300
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menus/_form.html.erb (4.2ms)
+  Rendered menus/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.1ms)
