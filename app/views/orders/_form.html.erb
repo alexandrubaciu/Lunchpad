@@ -39,8 +39,8 @@
   </p>
  <p>
     <%= f.label :order_code %><br>
-    <% nr = rand(100..999) %>
-    <%= nr %>
+    <%= f.text_field :order_code, :value => rand(100..999) %>
+    
   </p>
   <p>
     <%= f.label :order_status %><br>
