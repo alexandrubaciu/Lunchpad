@@ -1,19 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  menu: MyString
-  name: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  order_code: MyString
   order_status: MyString
+  user_id: 
+  menu_id: 
 
 two:
-  menu: MyString
-  name: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  order_code: MyString
   order_status: MyString
+  user_id: 
+  menu_id: 

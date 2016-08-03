@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803081039) do
+ActiveRecord::Schema.define(version: 20160803120705) do
 
   create_table "menus", force: :cascade do |t|
     t.date     "date"
@@ -24,16 +24,15 @@ ActiveRecord::Schema.define(version: 20160803081039) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string   "menu"
-    t.string   "name"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "address"
-    t.string   "order_code"
     t.string   "order_status"
+    t.integer  "user_id"
+    t.integer  "menu_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
+
+  add_index "orders", ["menu_id"], name: "index_orders_on_menu_id"
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false

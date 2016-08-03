@@ -15,32 +15,8 @@
   <% end %>
 
   <p>
-    <%= f.label :menu %><br>
-    <%= f.select :menu, ['Menu 1', 'Menu 2']%>
-  </p>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </p>
-
-  <p>
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
-  </p>
-
-  <p>
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </p>
- <p>
-    <%= f.label :order_code %><br>
-    <%= f.text_field :order_code, :value => rand(100..999) %>
-    
+    <%= f.label :menu_id %><br>
+    <%=  f.select(:menu_id, Menu.where("DATE(date) = ?", Date.today) {|a| [a.title, a.id]}) -%>
   </p>
   <p>
     <%= f.label :order_status %><br>
