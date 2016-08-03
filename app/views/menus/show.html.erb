@@ -4,31 +4,20 @@
 </p>
 <p>
 <strong>Title:</strong>
-<select>
-  <option value="-">---</option>
-  <option> <%= @menu.title %> </option>
-</select>
+ <%= @menu.title %> 
 </p>
-
+<p>
 <strong>First dish:</strong>
-<select>
-  <option value="-">---</option>
-  <option> <%= @menu.first_dish %> </option>
+ <%= @menu.first_dish %> 
 </select>
 </p>
-
+<p>
 <strong>Second dish:</strong>
-<select>
-  <option value="-">---</option>
-  <option> <%= @menu.second_dish %> </option>
-</select>
+  <%= @menu.second_dish %> 
 </p>
-
+<p>
 <strong>Dessert:</strong>
-<select>
-  <option value="-">---</option>
-  <option> <%= @menu.dessert %> </option>
-</select>
+  <option> <%= @menu.dessert %> 
 </p>
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>
