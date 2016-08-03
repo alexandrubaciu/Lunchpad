@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  #devise_for :users
   get 'welcome/index'
 
   mount API::Base, at: "/"
@@ -13,6 +14,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
+  devise_for :users, :controllers => { registrations: 'registrations' }
 
  # mount Lunchpad::API => '/'
 

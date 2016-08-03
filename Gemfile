@@ -28,6 +28,7 @@ gem 'grape-swagger'
 gem 'grape-active_model_serializers'
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'devise'
 gem 'hashie-forbidden_attributes'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -35,6 +36,7 @@ gem 'rack-cors', :require => 'rack/cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
 end
 
 group :development do
