@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
+  mount API::Base, at: "/"
+
+  
+  # mount GrapeSwaggerRails::Engine, at: "/documentation"
   resources :orders
   resources :menus
 
@@ -9,6 +13,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
+ # mount Lunchpad::API => '/'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
