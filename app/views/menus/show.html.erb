@@ -19,5 +19,10 @@
 <strong>Dessert:</strong>
   <option> <%= @menu.dessert %> 
 </p>
+
+<% if current_user.admin? %>
+
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>
+<%end %>
+

@@ -3,7 +3,7 @@
   <%= @order.menu %>
 </p>
  
-
+<% if current_user.admin? %>
 <p>
   <strong>Order status:</strong>
   <%= @order.order_status %>
@@ -11,3 +11,5 @@
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
+<% end %>
+<%= link_to 'Back', new_order_path %>

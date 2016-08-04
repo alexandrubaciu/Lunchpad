@@ -6,7 +6,7 @@ module API
       resource :menus do
         desc "Return all menus"
         get "", root: :menus do
-          Menu.all
+          Menu.where("DATE(date) = ?", Date.today)
         end
 
         desc "Return a menu"

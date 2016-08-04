@@ -16,13 +16,14 @@
 
   <p>
     <%= f.label :menu_id %><br>
-    <%=  f.select(:menu_id, Menu.where("DATE(date) = ?", Date.today) {|a| [a.title, a.id]}) -%>
+    <%=  f.select(:menu_id, Menu.where("DATE(date) = ?", Date.today).map {|a| [a.title, a.id]}) -%>
   </p>
+  <% if current_user.admin? %>
   <p>
     <%= f.label :order_status %><br>
     <%= f.select :order_status, ['Pending', 'Sent']%>
   </p>
- 
+ <% end %>
  
   <p>
     <%= f.submit %>

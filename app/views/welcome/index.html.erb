@@ -4,10 +4,10 @@
 <p>If you want to see all the orders, click the link.</p>
 
 <%= link_to 'My Menu', controller: 'menus' %>
+<% if current_user.admin? %>
 <br>
 <%= link_to 'Orders', controller: 'orders'%>
-
-
+<% end %>
 
 
 
