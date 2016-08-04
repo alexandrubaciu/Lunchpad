@@ -1,5 +1,7 @@
 <h1>Menus</h1>
-<%= link_to 'New menu', new_menu_path %>
+<% if current_user.admin? %>
+  <%= link_to 'New menu', new_menu_path %>
+<% end %>
 <table>
   <tr>
     <th>Date</th>
@@ -17,11 +19,13 @@
        <td><%= menu.first_dish %></td>
         <td><%= menu.second_dish %></td>
          <td><%= menu.dessert %></td>
-      <td><%= link_to 'Show', menu_path(menu) %></td>
-      <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
-      <td><%= link_to 'Delete', menu_path(menu),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+         <% if current_user.admin? %>
+          <td><%= link_to 'Show', menu_path(menu) %></td>
+          <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
+          <td><%= link_to 'Delete', menu_path(menu),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
     
     </tr>
   <% end %>
