@@ -6,6 +6,7 @@ module API
       mount API::V1::Menus
       # mount API::V1::AnotherResource
       mount API::V1::Orders
+      mount API::V1::Users
       add_swagger_documentation(
         api_version: "v1",
         hide_documentation_path: true,

@@ -36,6 +36,7 @@ class OrdersController < ApplicationController
 
  def update
  	@order = Order.find(params[:id])
+ 	byebug
  	if @order.update(order_params)
  		redirect_to @order
  	else
@@ -46,7 +47,7 @@ class OrdersController < ApplicationController
  private
 
  def order_params
- 	params.require(:order).permit(:menu,:name,:email,:phone,:address,:order_code,:order_status)
+ 	params.require(:order).permit(:menu_id,:name,:email,:phone,:address,:order_code,:order_status, :user_id)
  end
 
 end
