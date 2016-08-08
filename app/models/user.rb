@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   after_initialize :set_default_role, :if => :new_record?
   # Use this before callback to set up User access_token.
   before_save :ensure_authentication_token
+   devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
   def set_default_role
     self.role ||= :user
@@ -30,6 +32,5 @@ class User < ActiveRecord::Base
     end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+ 
 end
