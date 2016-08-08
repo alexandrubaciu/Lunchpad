@@ -6,25 +6,34 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<p class="navbar-text pull-right">
-<% if user_signed_in? %>
-  <% if current_user.admin? %>
-    <%= link_to 'Administration', rails_admin_path %>
-  <% end %>
-  Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
-
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+ <body class="body">  
+   <header class="mainHeader">          
+      <nav>
+       <%= image_tag("logo2.gif", :width => 100, :height => 100 )%>
+         <ul class="nav__list">
+          <li class="nav__element"  ><% if user_signed_in? %></li>
+          <li class="nav__element"> <% if current_user.admin? %>
+              <%= link_to 'Administration', rails_admin_path %> </li>
+            <% end %>
+            <span class="culoare">
+            Logged in as <strong><%= current_user.email %> </strong>.</span>
+            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <% else %>
+            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> 
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+          <% end %>                 
+         </li>                      
+        </ul>
+      </nav>
+  </header>  
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+            <%= yield %>
+        <footer class="mainFooter mainFooter--default"">
+            <p>Copyright &copy; 2016 Alpha Pirates<br>
+            &copy; ASSIST SOFTWARE 1992-2016. ALL RIGHTS RESERVED.</p>
+        </footer>
 </body>
 </html>

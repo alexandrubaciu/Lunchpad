@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+  $(document).ready(function() {
+    // START JS CODE HERE
+		   
+		
+		
+	
+		$('.nav__element').slideToggle(400).show(800) ;
+		$('h2').fadeOut(500).fadeIn(1000);
+		$('img').click(function(){
+			$(this).remove();
+		});
+    // END JS CODE HERE
+  });
+

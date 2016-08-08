@@ -1,15 +1,22 @@
-<p>
+
+<section class="section">
+            <article class="card">
+<p class="p__comanda">
   <strong>Menu:</strong>
   <%= @order.menu.title %>
 </p>
- 
+ <p class="p__comanda">Multumim pentru comanda!</p>
+<p class="p__comanda">Pentru o noua comanda , apasati link-ul de mai jos</p>
 <% if current_user.admin? %>
-<p>
+<p class="p__comanda">
   <strong>Order status:</strong>
   <%= @order.order_status %>
 </p>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Edit', edit_order_path(@order) %> 
 <%= link_to 'Back', orders_path %>
 <% end %>
-<%= link_to 'New', new_order_path %>
+
+<%= link_to 'New', new_order_path , class: "form__submit form__submit--centrat"%>
+</article>
+</section>

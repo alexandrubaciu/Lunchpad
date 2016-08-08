@@ -1,4 +1,4 @@
-<%= form_for :menu, url: menus_path do |f| %>
+<%= form_for :menu,class:"form", url: menus_path do |f| %>
  <% if @menu.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -13,30 +13,30 @@
     </div>
   <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <p >
+    <%= f.label :title ,class:"form__label"%>
+    <%= f.text_field :title ,class:"form__input form__input--marime" %>
   </p>
-  <p>
-    <%= f.label :date %><br>
-    <%= f.text_field :date %>
+  <p >
+    <%= f.label :date ,class:"form__label" %>
+    <%= f.text_field :date ,class:"form__input form__input--marime" %>
   </p>
-   <p>
-    <%= f.label :first_dish %><br>
-    <%= f.text_field :first_dish %>
+   <p >
+    <%= f.label :first_dish  ,class:"form__label"%>
+    <%= f.text_field :first_dish ,class:"form__input form__input--marime"%>
   </p>
-   <p>
-    <%= f.label :second_dish %><br>
-    <%= f.text_field :second_dish %>
+   <p >
+    <%= f.label :second_dish ,class:"form__label"%>
+    <%= f.text_field :second_dish ,class:"form__input form__input--marime"%>
   </p>
-   <p>
-    <%= f.label :dessert %><br>
-    <%= f.text_field :dessert %>
+   <p >
+    <%= f.label :dessert ,class:"form__label"%>
+    <%= f.text_field :dessert ,class:"form__input form__input--marime" %>
   </p>
  
    
-  <p>
-    <%= f.submit %>
+  <p class="p__comanda">
+    <%= f.submit(class:"form__submit") %>
   </p>
 <% end %>
 

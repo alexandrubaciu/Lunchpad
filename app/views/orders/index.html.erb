@@ -1,3 +1,6 @@
+
+
+
 <% if current_user.admin? %>
 <h1>Listing orders</h1>
  
@@ -15,9 +18,9 @@
      
       <td><%= order.order_status%></td>
 
-      <td><%= link_to 'Show', order_path(order) %></td>
-      <td><%= link_to 'Edit', edit_order_path(order) %></td>
-      <td><%= link_to 'Destroy', order_path(order),
+      <td><%= link_to 'Show', order_path(order), class:"form__submit form__submit--auto" %></td>
+      <td><%= link_to 'Edit', edit_order_path(order), class:"form__submit form__submit--auto" %></td>
+      <td><%= link_to 'Destroy', order_path(order), class:"form__submit form__submit--auto",
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
          </tr>
@@ -26,3 +29,4 @@
 </table>
  <% end %>
 
+ 
