@@ -33,7 +33,8 @@ module API
             elsif order_id.blank?
               {error_code: 401, error_message:"No order id"}
             else
-              {first_dish: menu.first_dish,
+              { title: menu.title,
+                first_dish: menu.first_dish,
                 second_dish: menu.second_dish,
                 dessert: menu.dessert,
                 order_status: order.order_status }

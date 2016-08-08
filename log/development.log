@@ -41772,3 +41772,598 @@ Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127
   [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
   [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 12]]
 >>>>>>> master
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:36:11 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/alex/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/alex/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/alex/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.5ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDelayedJobs (20160808093051)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar, "queue" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160808093051"]]
+  [1m[36m (199.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_menu_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_menu_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_authentication_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_authentication_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.5ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_views_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_views_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_views_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_views_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:36:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 8768ms (Views: 8702.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-39240eb6a63b6cae764c4c0418b148982437d00abe1fe44c8136c940dd7f97ae.css?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/application.self-87197fd5f20d94e961e8d7f10754cb8dfa8fce2cbbc7447a36bd54e372a8adf6.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/assets/logo2-c1b23ff8e8df12f92044f6a38a9a99a9e0e86e3a484bffd5541371af56ee857b.gif" for 127.0.0.1 at 2016-08-08 16:36:52 +0300
+
+
+Started GET "/menus?class=form__input" for 127.0.0.1 at 2016-08-08 16:36:59 +0300
+Processing by MenusController#index as HTML
+  Parameters: {"class"=>"form__input"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mMenu Load (0.6ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 102ms (Views: 85.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-08-08 16:37:56 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "menus"
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT  "menus".* FROM "menus"  ORDER BY menus.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "orders"
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT  "orders".* FROM "orders"  ORDER BY orders.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "views"
+  [1m[36mView Load (0.4ms)[0m  [1mSELECT  "views".* FROM "views"  ORDER BY views.updated_at desc LIMIT 1[0m
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (38.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_navigation.html.haml (21.7ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/pjax.html.haml (9.6ms)
+Completed 200 OK in 1101ms (Views: 682.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-08-08 16:38:01 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "menus"[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY menus.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders"[0m
+  [1m[35mOrder Load (0.5ms)[0m  SELECT  "orders".* FROM "orders"  ORDER BY orders.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "views"[0m
+  [1m[35mView Load (0.5ms)[0m  SELECT  "views".* FROM "views"  ORDER BY views.updated_at desc LIMIT 1
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (30.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_navigation.html.haml (6.4ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/pjax.html.haml (3.7ms)
+Completed 200 OK in 405ms (Views: 370.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-9d1f82d664d7db45603fe18d4fb072007208e23513f273c67ba5e41f58344355.css?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-7a15aaeea6101fb1e648df5848917eddd01c5c193ffae1e121224ec7e96d8647.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-0eadfce64f22b8e533f96e573e738fdf5af614af5729c772838b8d1383739035.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:02 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-b707ff6592e3d3359ef77e61d1161a0370c5663c303eb0a5cec459fbf1fa7229.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:03 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:03 +0300
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:03 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for 127.0.0.1 at 2016-08-08 16:38:03 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 120ms (Views: 114.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-39240eb6a63b6cae764c4c0418b148982437d00abe1fe44c8136c940dd7f97ae.css?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/application.self-87197fd5f20d94e961e8d7f10754cb8dfa8fce2cbbc7447a36bd54e372a8adf6.js?body=1" for 127.0.0.1 at 2016-08-08 16:39:36 +0300
+
+
+Started GET "/assets/logo2-c1b23ff8e8df12f92044f6a38a9a99a9e0e86e3a484bffd5541371af56ee857b.gif" for 127.0.0.1 at 2016-08-08 16:39:37 +0300
+
+
+Started GET "/menus?class=form__input" for 127.0.0.1 at 2016-08-08 16:39:49 +0300
+Processing by MenusController#index as HTML
+  Parameters: {"class"=>"form__input"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 95ms (Views: 88.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2016-08-08 16:43:05 +0300
+Processing by RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 83ms (Views: 78.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-08-08 16:43:10 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XODP+t7AUfRPpxJPSe/Enp32srykZ9g5vWsGliFItfSE2iGG9orvHZHU1ZCtBa7kplm98I1qHjrKWUI2+SPG2A=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:43:10 +0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:43:10 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-08 16:43:50 +0300
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 91ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:43:55 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (129.3ms)
+Completed 200 OK in 240ms (Views: 236.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:44:14 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Zo677EGxLnZaUdMtmdd1ZAsZbItg+HZEufEWLN+jsAB+1q/T2bHji5uHk3LlYMbBuE9hhvort36oNpk10t4IQ==", "user"=>{"email"=>"iulian22@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "iulian22@yahoo.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-08-08 12:54:56.141941"], ["current_sign_in_at", "2016-08-08 13:44:14.564773"], ["sign_in_count", 13], ["updated_at", "2016-08-08 13:44:14.567046"], ["id", 10]]
+  [1m[36m (68.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 327ms (ActiveRecord: 69.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:44:14 +0300
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 10]]
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menus?class=form__input" for 127.0.0.1 at 2016-08-08 16:44:19 +0300
+Processing by MenusController#index as HTML
+  Parameters: {"class"=>"form__input"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mMenu Load (0.5ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 65ms (Views: 59.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2016-08-08 16:44:21 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+  Rendered orders/_form.html.erb (11.3ms)
+  Rendered orders/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2016-08-08 16:44:24 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yc94mvAPkRzOXkRIwQfyVLVTaR1/xBtELs+ljr6di/tPi5pZmK6D2fxGC7i9FY4jHPQBLoidOnSafnakaCj0lg==", "order"=>{"menu_id"=>"15", "user_id"=>"10"}, "commit"=>"Create Order"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "orders" ("menu_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 15], ["user_id", 10], ["created_at", "2016-08-08 13:44:24.171941"], ["updated_at", "2016-08-08 13:44:24.171941"]]
+  [1m[35m (152.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "delayed_jobs" ("handler", "run_at", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["handler", "--- !ruby/object:Delayed::PerformableMailer\nobject: !ruby/class 'UserMailer'\nmethod_name: :new_order\nargs:\n- !ruby/object:Order\n  raw_attributes:\n    menu_id: '15'\n    user_id: '10'\n    id: 34\n    created_at: &1 2016-08-08 13:44:24.171941566 Z\n    updated_at: *1\n    order_status: \n  attributes: !ruby/object:ActiveRecord::AttributeSet\n    attributes: !ruby/object:ActiveRecord::LazyAttributeHash\n      types:\n        id: &4 !ruby/object:ActiveRecord::Type::Integer\n          precision: \n          scale: \n          limit: \n          range: !ruby/range\n            begin: -2147483648\n            end: 2147483648\n            excl: true\n        order_status: &5 !ruby/object:ActiveRecord::Type::String\n          precision: \n          scale: \n          limit: \n        user_id: &2 !ruby/object:ActiveRecord::Type::Integer\n          precision: \n          scale: \n          limit: \n          range: !ruby/range\n            begin: -2147483648\n            end: 2147483648\n            excl: true\n        menu_id: *2\n        created_at: !ruby/object:ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter\n          subtype: &3 !ruby/object:ActiveRecord::Type::DateTime\n            precision: \n            scale: \n            limit: \n        updated_at: !ruby/object:ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter\n          subtype: *3\n      values:\n        id: \n        order_status: \n        user_id: \n        menu_id: \n        created_at: \n        updated_at: \n      additional_types: {}\n      materialized: true\n      delegate_hash:\n        menu_id: !ruby/object:ActiveRecord::Attribute::FromUser\n          name: menu_id\n          value_before_type_cast: '15'\n          type: *2\n          value: 15\n        user_id: !ruby/object:ActiveRecord::Attribute::FromUser\n          name: user_id\n          value_before_type_cast: '10'\n          type: *2\n          value: 10\n        id: !ruby/object:ActiveRecord::Attribute::FromUser\n          name: id\n          value_before_type_cast: 34\n          type: *4\n          value: 34\n        created_at: !ruby/object:ActiveRecord::Attribute::FromUser\n          name: created_at\n          value_before_type_cast: *1\n          type: !ruby/object:ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter\n            subtype: *3\n          value: *1\n        updated_at: !ruby/object:ActiveRecord::Attribute::FromUser\n          name: updated_at\n          value_before_type_cast: *1\n          type: !ruby/object:ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter\n            subtype: *3\n          value: *1\n        order_status: !ruby/object:ActiveRecord::Attribute::FromDatabase\n          name: order_status\n          value_before_type_cast: \n          type: *5\n          value: \n  new_record: false\n"], ["run_at", "2016-08-08 13:44:24.385155"], ["created_at", "2016-08-08 13:44:24.385584"], ["updated_at", "2016-08-08 13:44:24.385584"]]
+  [1m[36m (137.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders/34
+Completed 302 Found in 364ms (ActiveRecord: 297.9ms)
+
+
+Started GET "/orders/34" for 127.0.0.1 at 2016-08-08 16:44:24 +0300
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mOrder Load (1.4ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 34]]
+  [1m[35mMenu Load (1.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT 1  [["id", 15]]
+  Rendered orders/show.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 108ms (Views: 90.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2016-08-08 16:44:41 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mMenu Load (0.5ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+  Rendered orders/_form.html.erb (14.2ms)
+  Rendered orders/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 86ms (Views: 80.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-08-08 16:44:53 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pQYTNigJ4wf/hSwCJo7VzVCoGcUYzFl+nJU8IdwJY5AjQvH1QKjxws2dY/JanKm6+Q9x9u+VeE4oJO8LCrwc/Q=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-08 16:44:53 +0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:44:53 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 125ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:45:15 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RuVLxXmzFVQNnEz7owQwKCmGCzArMUd6BLC0vEikJWQsLvLaRblmF330cvvWPjbHY44aSB6JcpR0dk1AyTBvQw==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "pyro_superstar_95@yahoo.com"]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RuVLxXmzFVQNnEz7owQwKCmGCzArMUd6BLC0vEikJWQsLvLaRblmF330cvvWPjbHY44aSB6JcpR0dk1AyTBvQw==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 279ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:45:21 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bvgikArxhCWy0K82TXbexSnlMOLGVXtRc1fyqbl9cPYEM5uPNvv3ZsK4kTY4TNgqY+0hmvPtTr8DkQtVOOk60Q==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "pyro_superstar_95@yahoo.com"]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bvgikArxhCWy0K82TXbexSnlMOLGVXtRc1fyqbl9cPYEM5uPNvv3ZsK4kTY4TNgqY+0hmvPtTr8DkQtVOOk60Q==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 267ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:45:26 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bYor/T35mTvE8fKxR3bDcDRVMXwPAQuz0ProXYAfn8gHQZLiAfPqeLSZzLEyTMWffl0gBDq5Pl2gPBGhAYvV7w==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "pyro_superstar_95@yahoo.com"]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bYor/T35mTvE8fKxR3bDcDRVMXwPAQuz0ProXYAfn8gHQZLiAfPqeLSZzLEyTMWffl0gBDq5Pl2gPBGhAYvV7w==", "user"=>{"email"=>"pyro_superstar_95@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 267ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2016-08-08 16:50:23 +0300
+Processing by OrdersController#index as HTML
+Completed 401 Unauthorized in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 109ms (Views: 66.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.self-39240eb6a63b6cae764c4c0418b148982437d00abe1fe44c8136c940dd7f97ae.css?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:24 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:25 +0300
+
+
+Started GET "/assets/application.self-87197fd5f20d94e961e8d7f10754cb8dfa8fce2cbbc7447a36bd54e372a8adf6.js?body=1" for 127.0.0.1 at 2016-08-08 16:50:25 +0300
+
+
+Started GET "/assets/logo2-c1b23ff8e8df12f92044f6a38a9a99a9e0e86e3a484bffd5541371af56ee857b.gif" for 127.0.0.1 at 2016-08-08 16:50:25 +0300
