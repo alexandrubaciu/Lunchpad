@@ -28,6 +28,7 @@ class OrdersController < ApplicationController
  def create
  	@order = Order.new(order_params)
  	if @order.save
+ 			UserMailer.delay.new_order(@order)
 			redirect_to @order
 		else
 			render 'new'
@@ -36,7 +37,6 @@ class OrdersController < ApplicationController
 
  def update
  	@order = Order.find(params[:id])
- 	byebug
  	if @order.update(order_params)
  		redirect_to @order
  	else
