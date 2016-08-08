@@ -1,4 +1,7 @@
-<%= form_for @order do |f| %>
+<section class="section">
+            <article class="card">
+              
+<%= form_for  @order do |f| %>
 	
 	<% if @order.errors.any? %>
     <div id="error_explanation">
@@ -15,17 +18,25 @@
   <% end %>
 
   <p>
-    <%= f.label :menu_id %><br>
-    <%=  f.select(:menu_id, Menu.where("DATE(date) = ?", Date.today).map {|a| [a.title, a.id]}) -%>
+    <%= f.label :menu_id , class:"form__label " %>
+    <%=  f.select( :menu_id, Menu.where("DATE(date) = ?", Date.today).map {|a| [a.title, a.id]})  %>
   </p>
   <% if current_user.admin? %>
   <p>
-    <%= f.label :order_status %><br>
+    <%= f.label :order_status ,class:"form__label"%>
     <%= f.select :order_status, ['Pending', 'Sent']%>
   </p>
  <% end %>
  <%= f.hidden_field :user_id, :value => current_user.id %>
   <p>
-    <%= f.submit %>
+    <%= f.submit(class:"form__submit")  %>
   </p>
 <% end %>
+ <% if current_user.admin? %>
+<%= link_to 'List orders', orders_path %>
+<%end%>
+<%= link_to 'Back', menus_path %>
+
+            
+</article>
+</section>

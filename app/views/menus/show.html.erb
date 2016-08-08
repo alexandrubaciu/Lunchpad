@@ -1,28 +1,32 @@
-<p>
+<section class="section">
+            <article class="card">
+<p class="p__show">
   <strong>Date:</strong>
   <%= @menu.date %>
 </p>
-<p>
+<p class="p__show">
 <strong>Title:</strong>
  <%= @menu.title %> 
 </p>
-<p>
+<p class="p__show">
 <strong>First dish:</strong>
  <%= @menu.first_dish %> 
 </select>
 </p>
-<p>
+<p class="p__show">
 <strong>Second dish:</strong>
   <%= @menu.second_dish %> 
 </p>
-<p>
+<p class="p__show">
 <strong>Dessert:</strong>
-  <option> <%= @menu.dessert %> 
+   <%= @menu.dessert %>
+   
 </p>
 
 <% if current_user.admin? %>
-
-<%= link_to 'Edit', edit_menu_path(@menu) %> |
-<%= link_to 'Back', menus_path %>
+<strong>
+<%= link_to 'Edit', edit_menu_path(@menu) %> 
+<%= link_to 'Back', menus_path %></strong>
 <%end %>
-
+</article>
+</section>

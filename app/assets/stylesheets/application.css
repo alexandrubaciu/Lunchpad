@@ -1,4 +1,6 @@
-/*
+
+
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -12,4 +14,277 @@
  *
  *= require_tree .
  *= require_self
- */
+ 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic);
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0;  
+    min-height: 100%;
+  
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+/*-----------------------------------------------------------*/
+/* login page */
+.section{
+    background: #fff;
+    padding: 15px;
+    margin: 20px auto;  
+}
+.card{
+    background: #fff;
+    box-shadow: 0px 2px 20px #CDCDCD;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 35px 30px;
+}
+.card__title{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.card__title::first-letter{
+    font-size: 200%;
+}
+.form   {
+
+}
+.form__group{
+    margin-bottom: 20px;
+}
+.form__group:last-of-type{
+    margin-bottom: 0;
+}
+.form__label,
+.form__input{
+    display: block;
+    width: 100%;
+}
+.form__label{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.form__label--meniu{
+  text-align: center;
+}
+.form__input{
+    height: 40px;
+}
+.form__submit{
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    border:none;
+    padding: 10px 15px; 
+    background: #4d394b;
+    color: #29a3a3;
+    margin: 0 auto ;
+    margin-top: 20px;   
+}
+.form__submit--tabel{
+    width: 40%;
+    float:right;
+}
+.form--inline .form__group:before,
+.form--inline .form__group:after{
+    content: '';
+    display: table;
+}
+.form--inline .form__group:after{
+    clear: both;
+}
+.form--inline .form__label,
+.form--inline .form__input{
+float: left;
+font-size: 0.8em;
+}
+.form--inline .form__label{
+    width: 20%;
+}
+.form--inline .form__input{
+    width: 80%;
+}
+/*end login*/
+/*----------------------------------------------------------*/
+/*start mainFooter */
+.mainFooter{
+    width: 100%;
+    bottom: 0;
+
+}
+.mainFooter--default {
+    
+}
+.mainFooter p{
+    background: #4d394b;
+    font-size: 1em;
+    line-height: 50px;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+/*finish mainFooter */
+/*---------------------------------------------*/
+/*start mainHeader */
+.mainHeader{
+}
+.mainHeader nav{
+    background: #4d394b;
+    font-size: 1em;
+    margin: 0 auto 50px auto;
+    text-align: right;
+    height: 50px;
+}
+.mainHeader img{
+    float: left;
+    height: 50px;
+}
+/*finish mainHeader */
+/*---------------------------------------------*/
+/*start Tabel */
+.tabel2{
+    margin: 0 auto;
+    font-size: 20px;    
+}
+    tr:nth-child(2n+1){    background: #f7f7f7;    }
+    tr:nth-child(2n+2){    background: #e7e7e7;    }
+    tr:nth-child(1){    background: #fff;    }
+    th{        size: 225px;    width: 520px;    }
+    td{    size:250px;    border: none;    padding: 5px;    }
+    tr{    text-align:  center;      }
+    li{    color: #29a3a3;    }
+.card--meniu{
+    max-width: 95%;
+}
+/*finish tabel */
+/*---------------------------------------------*/
+/*start about us */
+.form__group1{
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 2px 20px #CDCDCD;
+    padding: 2%;
+}
+.form{
+    position: relative;
+}
+/*finish about */
+/*---------------------------------------------*/
+/*start add */
+.demo-section {
+  background: #FAFAFA;
+/*   height: 800px; */
+  padding: 15px;
+  border: 2px solid #DDD;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.clearfix:before, 
+.clearfix:after{
+  content: '';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.section-float {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px auto;  
+}
+.section-float .section {
+  min-height: 200px;
+  border: 2px solid white; 
+}/* cood de pe net victor*/
+/* GENERAL STYLES */
+/*---------------------------------------------*/
+.demo-section {
+  background: #fff;
+  height: 100%; 
+  padding: 15px;
+  border: 2px solid #fff;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.demo-section__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+/*  FLOATS */
+/*---------------------------------------------*/
+.section-float {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.section-float .column {
+  min-height: 200px; 
+}
+@media screen and (min-width: 900px) {
+  
+  .section-float .column {
+    float: left;
+  }  
+  .section-float .column:first-child {
+    width: 30%;
+  }
+  .section-float .column:last-child {
+    width: 70%;
+  }
+}
+/* Form inline */
+/* finish cod de pe net victor */
+/* nav bar   aliniere elemente */
+.nav__list {
+    float: right;
+    margin-right: 200px;
+    list-style-type: none;  
+}
+.nav__element {
+    float: left;
+    margin-right: 20px;
+}
+/*finish aliniere elemente */
+p{
+  font-size: 1.2em;
+}
+.p__comanda{
+  text-align: center;
+  font-size: 2em;
+
+}
+.p__show{
+  font-size: 1.6em;
+}
+.form__submit--centrat{
+  text-align: center;
+}
+.form__submit--auto{
+  margin: 0 auto;
+}
+a{
+  color: #29a3a3;
+  font-style: 'Lato';
+  font-size: 1em;
+  text-decoration: none;
+
+}
+.form__input--marime{
+  font-size: 0.8em;
+  
+  
+}
+.culoare{
+  color: #29a3a3;
+}

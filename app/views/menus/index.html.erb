@@ -1,6 +1,9 @@
-<h1>Menus</h1>
+<section class="section">     
+   <article class="card card--meniu">       
+                           
+ <h2 class="card__title"> MENIU</h2>
 <% if current_user.admin? %>
-  <%= link_to 'New menu', new_menu_path %>
+  <%= link_to 'New menu', new_menu_path , class: "form__submit form__submit--centrat"%>
 <% end %>
 <table>
   <tr>
@@ -20,11 +23,12 @@
         <td><%= menu.second_dish %></td>
          <td><%= menu.dessert %></td>
          <% if current_user.admin? %>
-          <td><%= link_to 'Show', menu_path(menu) %></td>
-          <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
+          <td><%= link_to 'Show', menu_path(menu), class:"form__submit form__submit--auto" %></td>
+          <td><%= link_to 'Edit', edit_menu_path(menu) , class:"form__submit 
+          form__submit--auto"%></td>
           <td><%= link_to 'Delete', menu_path(menu),
                   method: :delete,
-                  data: { confirm: 'Are you sure?' } %></td>
+                  data: { confirm: 'Are you sure?' },class:"form__submit form__submit--auto" %></td>
         <% end %>
     
     </tr>
@@ -32,4 +36,6 @@
 </table>
 
 <br>
-<%= link_to 'New order', new_order_path %>
+<%= link_to 'New order', new_order_path , class: "form__submit form__submit--centrat" %>
+</article>
+</section>
