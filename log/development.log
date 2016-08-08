@@ -28543,3 +28543,1924 @@ Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127
 
 Started POST "/api/v1/orders/new" for 192.168.151.89 at 2016-08-08 12:05:29 +0300
 Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.89 at 2016-08-08 12:13:43 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.89 at 2016-08-08 12:13:43 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.89 at 2016-08-08 12:13:45 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.89 at 2016-08-08 12:14:44 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cazacubeni12@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.89 at 2016-08-08 12:14:44 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/users/login" for 192.168.151.89 at 2016-08-08 12:15:48 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.89 at 2016-08-08 12:15:48 +0300
+Cannot render console from 192.168.151.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started GET "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 12:52:45 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 12:52:46 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.94 at 2016-08-08 12:53:15 +0300
+Cannot render console from 192.168.151.94! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.94 at 2016-08-08 12:53:23 +0300
+Cannot render console from 192.168.151.94! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.7ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.94 at 2016-08-08 12:53:33 +0300
+Cannot render console from 192.168.151.94! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 12:58:24 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:00:05 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:00:05 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:00:07 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:02:53 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started GET "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:06:50 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:08:38 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:08:39 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:09:23 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:10:40 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:11:13 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:11:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cazacubeni12@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:11:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:11:22 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:11:55 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:12:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:12:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:13:57 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cazacubeni12@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:13:58 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:14:00 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:16:50 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:16:51 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:16:58 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:21:12 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:21:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cazacubeni12@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:21:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:21:23 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:21:23.327379"], ["updated_at", "2016-08-08 10:21:23.327379"]]
+  [1m[35m (130.4ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:22:36 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:22:38 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:22:38.344720"], ["updated_at", "2016-08-08 10:22:38.344720"]]
+  [1m[36m (80.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:24:37 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:24:45 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["menu_id", 12], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:24:45.463287"], ["updated_at", "2016-08-08 10:24:45.463287"]]
+  [1m[35m (76.4ms)[0m  commit transaction
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:24:49 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:24:49 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:24:50 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/admin/order" for 127.0.0.1 at 2016-08-08 13:24:54 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"order"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT  "orders".* FROM "orders"  ORDER BY orders.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (9, 7, 5)
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE "menus"."id" IN (12, 10, 1, 9, 11, 6)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders"
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (280.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_navigation.html.haml (16.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/layouts/rails_admin/pjax.html.haml (9.8ms)
+Completed 200 OK in 902ms (Views: 740.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.self-500c9c057184ce7286eac69fca4ef0471a6a00a36bb4939ae65d47ff9849a57e.css?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-7a15aaeea6101fb1e648df5848917eddd01c5c193ffae1e121224ec7e96d8647.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-0eadfce64f22b8e533f96e573e738fdf5af614af5729c772838b8d1383739035.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-b707ff6592e3d3359ef77e61d1161a0370c5663c303eb0a5cec459fbf1fa7229.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/assets/fontawesome-webfont-7dacf83f51179de8d7980a513e67ab3a08f2c6272bb5946df8fd77c0d1763b73.woff2" for 127.0.0.1 at 2016-08-08 13:24:55 +0300
+
+
+Started GET "/admin/menu/12?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2016-08-08 13:25:18 +0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"menu", "id"=>"12"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 12]]
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/rails_admin-0.8.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (6.6ms)
+Completed 200 OK in 38ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:29 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:29 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:29 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:30 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:30 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:30 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:30 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:30 +0300
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:31 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:31 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:31 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:31 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:31 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:32 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+
+
+Started GET "/api/v1/orders/new" for 127.0.0.1 at 2016-08-08 13:25:32 +0300
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1[0m  [["id", 0]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:28:54 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:28:55 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:28:57 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:28:57.044449"], ["updated_at", "2016-08-08 10:28:57.044449"]]
+  [1m[36m (73.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=2-2" for 127.0.0.1 at 2016-08-08 13:32:05 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:89: syntax error, unexpected ',', expecting =>
+            { Menu.where(id: permitted_params[:id]).first, 
+                                                          ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:90: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/api/v1/orders.rb:89: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:90: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:12 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:23 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:24 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.4ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:25 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.8ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:56 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.6ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:32:56 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.1ms)
+
+
+Started GET "/api/v1/orders/check_code" for 127.0.0.1 at 2016-08-08 13:34:15 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.7ms)
+
+
+Started GET "/api/v1/orders/check_code" for 127.0.0.1 at 2016-08-08 13:34:45 +0300
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:34:57 +0300
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:35:27 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '\n', expecting =>
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '\n', expecting =>
+  app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.3ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:35:41 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:35:48 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.3ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:35:50 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.1ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:35:53 +0300
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/orders/check_code"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:36:05 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:37:54 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '\n', expecting =>
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '\n', expecting =>
+  app/controllers/api/v1/orders.rb:37: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:38:55 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+               {  menu.title, order_status: order.order_status }
+                             ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:39:30 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:40:24 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+... permitted_params[:id]).first!, order_status: order.order_st...
+...                               ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:41:34 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+               {menu, order_status: order.order_status }
+                     ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.2ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:42:05 +0300
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting =>
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting =>
+  app/controllers/api/v1/orders.rb:99: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.6ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 13:42:13 +0300
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:43:10 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:43:11 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:43:14 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:43:14.803760"], ["updated_at", "2016-08-08 10:43:14.803760"]]
+  [1m[36m (51.1ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/api/v1/orders/check_code" for 192.168.151.50 at 2016-08-08 13:43:19 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:48:22 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')[0m
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:48:29 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:48:29 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:48:31 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:48:31.447091"], ["updated_at", "2016-08-08 10:48:31.447091"]]
+  [1m[36m (71.6ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/api/v1/users/login" for 192.168.151.50 at 2016-08-08 13:49:41 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.50 at 2016-08-08 13:49:41 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.50 at 2016-08-08 13:49:42 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 11], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:49:42.867428"], ["updated_at", "2016-08-08 10:49:42.867428"]]
+  [1m[36m (73.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code" for 192.168.151.50 at 2016-08-08 13:50:20 +0300
+Cannot render console from 192.168.151.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 13:58:36 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 13:58:36 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 13:58:38 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 10:58:38.492783"], ["updated_at", "2016-08-08 10:58:38.492783"]]
+  [1m[36m (76.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/menus" for 192.168.151.42 at 2016-08-08 14:11:37 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:11:43 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:12:01 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:12:28 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:12:39 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 14:13:09 +0300
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:13:16 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/orders/check_code/?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:14:00 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:14:03 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:14:06 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:15:31 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 14:15:32 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 14:15:33 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 11:15:33.766337"], ["updated_at", "2016-08-08 11:15:33.766337"]]
+  [1m[36m (66.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:15:37 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:17:14 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 14:17:15 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 14:17:17 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 11:17:17.114528"], ["updated_at", "2016-08-08 11:17:17.114528"]]
+  [1m[36m (71.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?oder_code=android.support.v7.widget.AppCompatEditText%7Bf9249f9%20VFED..CL.%20.F......%2048%2C96-1032%2C222%20%237f0b0055%20app%3Aid%2Fcode_screen_editCode%7D" for 192.168.151.42 at 2016-08-08 14:17:20 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:18:40 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 14:18:41 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 14:18:42 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 11:18:42.605426"], ["updated_at", "2016-08-08 11:18:42.605426"]]
+  [1m[36m (69.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?oder_code=android.support.v7.widget.AppCompatEditText%7Bf9249f9%20VFED..CL.%20.F......%2048%2C96-1032%2C222%20%237f0b0055%20app%3Aid%2Fcode_screen_editCode%7D" for 192.168.151.42 at 2016-08-08 14:18:45 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:19:44 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+....first_dish.where(id: menu_id),Menu.second_dish.where(id: me...
+...                               ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting keyword_end
+...second_dish.where(id: menu_id),Menu.dessert.where(id: menu_i...
+...                               ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting keyword_end
+...enu.dessert.where(id: menu_id),order_status: order.order_sta...
+...                               ^
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+/home/catalina/Internship/Lunchpad/app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+end  
+     ^):
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting =>
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting keyword_end
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected ',', expecting keyword_end
+  app/controllers/api/v1/orders.rb:36: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/api/v1/orders.rb:98: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/base.rb:8:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:19:47 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/users/login"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.8ms)
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:19:53 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/users/login"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/catalina/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.8ms)
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:24:59 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 14:25:00 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 14:25:01 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 11:25:01.935716"], ["updated_at", "2016-08-08 11:25:01.935716"]]
+  [1m[36m (73.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=android.support.v7.widget.AppCompatEditText%7Bafbd184%20VFED..CL.%20.F......%2048%2C96-1032%2C222%20%237f0b0055%20app%3Aid%2Fcode_screen_editCode%7D" for 192.168.151.42 at 2016-08-08 14:25:05 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1032]]
+
+NoMethodError (undefined method `order_status' for nil:NilClass):
+  app/controllers/api/v1/orders.rb:36:in `block (2 levels) in <class:Orders>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=android.support.v7.widget.AppCompatEditText%7B7fa8e0c%20VFED..CL.%20.F......%2048%2C96-1032%2C222%20%237f0b0055%20app%3Aid%2Fcode_screen_editCode%7D" for 192.168.151.42 at 2016-08-08 14:25:20 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1032]]
+
+NoMethodError (undefined method `order_status' for nil:NilClass):
+  app/controllers/api/v1/orders.rb:36:in `block (2 levels) in <class:Orders>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=android.support.v7.widget.AppCompatEditText%7B7fa8e0c+VFED..CL.+.F......+48%2C96-1032%2C222+%237f0b0055+app%3Aid%2Fcode_screen_editCode%7D" for 192.168.151.42 at 2016-08-08 14:26:47 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 0]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1032]]
+
+NoMethodError (undefined method `order_status' for nil:NilClass):
+  app/controllers/api/v1/orders.rb:36:in `block (2 levels) in <class:Orders>'
+
+
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/catalina/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:28:15 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 127.0.0.1 at 2016-08-08 14:37:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 14:44:20 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 14:44:21 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 14:44:23 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 11:44:23.272133"], ["updated_at", "2016-08-08 11:44:23.272133"]]
+  [1m[36m (85.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:45:13 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 14:45:50 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 14:48:15 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/orders/check_code" for 192.168.151.42 at 2016-08-08 15:02:24 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 15:02:27 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 15:02:28 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 15:02:29 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.9ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 12:02:29.444336"], ["updated_at", "2016-08-08 12:02:29.444336"]]
+  [1m[36m (82.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-1" for 192.168.151.42 at 2016-08-08 15:02:35 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.4ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 15:03:41 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 15:03:41 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.6ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 15:03:43 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 12:03:43.528893"], ["updated_at", "2016-08-08 12:03:43.528893"]]
+  [1m[36m (71.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-12" for 192.168.151.42 at 2016-08-08 15:03:56 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 12]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 15:04:42 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 15:04:43 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 15:04:45 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 12:04:45.091059"], ["updated_at", "2016-08-08 12:04:45.091059"]]
+  [1m[36m (168.4ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-12" for 192.168.151.42 at 2016-08-08 15:04:47 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 12]]
+
+
+Started POST "/api/v1/users/login" for 192.168.151.42 at 2016-08-08 15:06:20 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cazacubeni12@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+
+
+Started GET "/api/v1/menus?token=QuqbwDYdN9UyYhNWs3dT" for 192.168.151.42 at 2016-08-08 15:06:20 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" WHERE (DATE(date) = '2016-08-08')
+
+
+Started POST "/api/v1/orders/new" for 192.168.151.42 at 2016-08-08 15:06:22 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."authentication_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["authentication_token", "QuqbwDYdN9UyYhNWs3dT"]]
+  [1m[35mMenu Load (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "orders" ("menu_id", "user_id", "order_status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["menu_id", 10], ["user_id", 9], ["order_status", "Pending"], ["created_at", "2016-08-08 12:06:22.154934"], ["updated_at", "2016-08-08 12:06:22.154934"]]
+  [1m[36m (70.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/orders/check_code?order_code=1-12" for 192.168.151.42 at 2016-08-08 15:06:26 +0300
+Cannot render console from 192.168.151.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ?  ORDER BY "orders"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = ?  ORDER BY "menus"."id" ASC LIMIT 1[0m  [["id", 12]]
