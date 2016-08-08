@@ -31,9 +31,15 @@ gem 'grape-active_model_serializers'
 gem 'devise'
 gem 'rails_admin'
 gem 'hashie-forbidden_attributes'
+gem 'high_voltage'
+gem 'bootstrap-sass'
+gem 'delayed_job_active_record'
+gem 'daemons'
+gem 'devise-async'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rack-cors', :require => 'rack/cors'
+gem 'byebug'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -1,5 +1,12 @@
 class RegistrationsController < Devise::RegistrationsController
 
+ def create
+   super
+   if @user.persisted?
+      UserMailer.delay.new_registration(@user)
+   end
+ end
+
   private
 
   def sign_up_params
