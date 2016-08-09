@@ -13,8 +13,9 @@ module API
 
         get :check_code do
           order_code = params[:order_code].split('-')
-          order_id = order_code.first
-          menu_id = order_code.last
+          order_id = order_code[0]
+          menu_id = order_code[1]
+        
 
             begin
                 order = Order.where(id: order_id).first
@@ -26,18 +27,19 @@ module API
             rescue
                 menu = nil
             end
-            if order_code.blank?
+            if order_id.blank?
               {error_code: 401, error_message:"No order code."}
             elsif menu_id.blank?
               {error_code: 401, error_message:"No menu id."}
             elsif order_id.blank?
               {error_code: 401, error_message:"No order id"}
             else
-              { title: menu.title,
+              { order_id: order.id,
+                title: menu.title,
                 first_dish: menu.first_dish,
                 second_dish: menu.second_dish,
                 dessert: menu.dessert,
-                order_status: order.order_status }
+                order_status: order.order_status}
             end
 
         end
@@ -86,16 +88,50 @@ module API
           elsif menu.nil?
             {error_code: 401, error_message:"No menu found for this menu_id."}
           else
-            Order.create!({
+            order=Order.create!({
               menu_id: menu_id,
               user_id: user.id,
               order_status: "Pending"
             })
+            UserMailer.delay.new_order(order)
             { status: 201, message: "order created" }
           end
 
-        end   
+        end    
 
+        desc "create rating"
+        params do
+          requires :rating, type: Integer
+          requires :order_id, type: String
+          requires :token, type: String
+        end
+
+        post "rating" do 
+          rating = params[:rating]
+          order_id = params[:order_id]
+          token = params[:token] 
+          begin
+            user = User.where(authentication_token: token).first!
+          rescue
+            user = nil
+          end
+          begin
+            order = Order.where(id: order_id).first!
+          rescue
+            order = nil
+          end
+          if token.blank?
+            {error_code: 401, error_message:"Not authorized."}
+          elsif order_id.blank?
+            {error_code: 401, error_message:"No order choosen."}
+          elsif user.nil?
+            {error_code: 401, error_message:"No user found"}
+          else
+            order.rating = rating
+            order.save
+            {success_message: "Rating save"}
+          end
+        end
 
       end
     end

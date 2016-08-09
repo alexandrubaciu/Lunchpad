@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808093051) do
+ActiveRecord::Schema.define(version: 20160809071201) do
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   default: 0, null: false
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20160808093051) do
     t.integer  "menu_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "rating"
   end
 
   add_index "orders", ["menu_id"], name: "index_orders_on_menu_id"

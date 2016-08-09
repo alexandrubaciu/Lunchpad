@@ -64,6 +64,8 @@ module API
             {status: 'ok', auth_token: user.authentication_token}
           end
         end
+
+      
       end
 
     end
